@@ -1,0 +1,63 @@
+#consultas{
+    background-image: url(../img/5-ar_calafate2.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin:0;
+    
+}
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.3);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    border-radius: 7px;
+
+}
+.title-contact{
+    color:#fff;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+input, select, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border:none;
+
+}
+textarea{
+    min-height: 100px;
+    color:#fff;
+    ;
+    padding: 30px;
+    max-width: 100%;
+    max-height: 200px;
+    
+}
+#boton{
+    background: #31384A;
+    color:#fff;
+    padding:20px
+}
+#boton:hover{
+    cursor:pointer;
+}
+#maps .column{
+    width: 100%;    
+    text-align: center;
+    background-size: 100vw;
+    background-attachment: fixed;
+    margin:auto;
+  
+    
+}
+.column h3,h4{
+    text-align: center;
+    color:#fff;
+}

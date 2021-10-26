@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel JVG</title>
+    <script src="https://kit.fontawesome.com/b13324c52b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/info.css">
+    <link rel="stylesheet" href="./css/destinos.css">
+    <link rel="stylesheet" href="./css/form.css"> 
+    <script src="validar.js"></script>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <h1 class="fas fa-plane-departure">Travel JVG</h1>
+            
+            <input type="checkbox" id="menu-bar">
+            <label class="fas fa-bars" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="destinos.html">Destinos</a> 
+                <a href="consultas.html">Consultas</a>     
+            </nav>           
+        
+        </div>
+    </header>
+
+    <main id="consultas">
+        <section id="contact">
+            <div class="column">               
+                    
+                <div class="div-form">                    
+
+                    <form action="enviar.php" method="post" class="form-register" name="FormBásico" id="FormBásico" onsubmit="return validar ()">
+                        <h2 class="title-contact">Formulario de Contacto</h2>
+                        <div>                            
+                            <input type="text"name="nombre" id="nombre" placeholder="Nombre y Apellido"  required>
+                        </div>
+                        <div>              
+                            
+                            <input type="number" name="telefono" id="telefono" placeholder="Teléfono"required>
+    
+                        </div>
+                        <div>       
+                            <select name="horarioContacto" id="horarioContacto" >
+                        
+                                <option value="">--Seleccione Horario de Contacto--</option>
+                                <option value="1">Por la mañana 9-12 hs</option>
+                                <option value="2">Por la tarde de 16-20 hs</option>
+                            </select>    
+                        </div>
+                        <div>                            
+                            <input type="email"name="correo_electronico"id="email" placeholder="Email" required>
+    
+                        </div>
+                        <div>
+                            <select name="destino" id="destino" >
+                            <option value="">Seleccione Destino...</option>
+                            <option value="3">Córdoba</option>
+                            <option value="4">Mendoza</option>
+                            <option value="5">Bariloche</option>
+                            <option value="6">Ushuaia</option>
+                            <option value="7">Miami</option>
+                            
+                            <option value="8">Barcelona</option>
+                            <option value="9">Cancún</option>
+                            <option value="10">Playa Del Carmen</option>
+                            <option value="11">Bayahibe-La Romana</option>                        
+                            </select>
+                        </div>
+                        <div>
+                            <textarea class="input" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba aquí su mensaje"></textarea>
+                        </div> 
+                        <input type="submit" value="ENVIAR" id="boton">       
+    
+                    </form>
+                </div>
+            </div>           
+    
+        </section>
+        <section id="maps">
+            <div class="column">
+                <h3>Visitanos en: </h3>
+                <h4>Luis María Campos 1554 (1876) Bernal Oeste- Bs.As. Argentina</h4>
+                <h4>Llámenos por teléfono para consultar sobre destinos</h4>
+                <img src="./img/2.png" alt="telefono">
+                <span><h4>(54 11) 4252-4352  </h4></span>             
+                 <br>  
+                <iframe src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.7060185576656!2d-58.31325238476746!3d-34.712594180431395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33276c2788d49%3A0xf0fc751a21ce9f68!2sLuis%20Mar%C3%ADa%20Campos%201554%2C%20Bernal%20Oeste%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1634933141547!5m2!1ses-419!2sar"
+                width="600" height="550" style="border:0;" allowfullscreen=""
+                loading="lazy" frameborder="0"></iframe>        
+            </div>    
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p class="copy">Travel JVG © 2021</p>
+            <div class="sociales">
+                <a class="fab fa-facebook"></a>
+                <a class="fab fa-twitter"></a>
+                <a  class="fab fa-instagram"></a>
+                <a class="fab fa-google-plus"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+   
+    
+</body>
+</html>
